@@ -1,118 +1,56 @@
 body{
     font-family: 'Courier New', Courier, monospace;
 }
-.nav_one{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #333;
-    position:relative;
-    /*top: 0;*/
-    width: 100%;
-    height:7%;
-    padding:0 0 0 0 ;
-    right: 3px;
-} 
-.modify_bar a{
+.section_one{
+    padding:0;
+    margin:0;
+    position: relative;
+    bottom: 7px;
+}
+.section_one a {
     float:right;
     display: block;
     text-align: center;
-    /*padding: 14px 16px;*/
-    padding: 20px 16px 20px 16px;
     text-decoration: none;
-    /*margin-top: 20px;*/
-    color: white;
-    border-right: 1px solid #505050;
-    border-left: 1px solid #505050;
-}
-.modify_bar a:hover {
-    background-color: black;
-}
-#id6{
-    float: left;
-    font-family: 'Rubik',sans-serif;
-    font-size: 40px;
-    /*margin-top:9px;*/
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-#id5{
-    position:relative;
-   /* margin: 0 50px 0 0;*/
-   right:935px;
-   font-family:'Montserrat',sans-serif;
-   /*bottom: 10px;*/
-   background-color: black;
-   /*padding-bottom: 22px;
-   padding-right: 40px;
-   padding-left: 15px;*/
-}
-#id7{
-    background-color: greenyellow;
-}
-#id7:hover{
-    background-color: black;
-}
-/*******************/
-/*tooltip*/
-/************************************/
-.nav_two{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-    position:relative;
-    /*top: 0;*/
-    width: 100%;
-    height:7%;
-    padding:0 0 0 0 ;
-    right: 3px;
-}
-.modify_bar_two a {
-    float:right;
-    display: block;
-    text-align: center;
-    /*padding: 14px 16px;*/
-    padding: 20px 16px 20px 16px;
-    text-decoration: none;
-    /*margin-top: 20px;*/
     color: black;
-    /*border-right: 1px solid #505050;
-    border-left: 1px solid #505050;*/
 }
-.modify_bar_two i{
+.section_one i{
     color: green;
     padding: 0 10px 0 0;
 }
-/*.modify_bar_two a :hover{
-    text-decoration:underline;
-    color:black;
-}*/
-#Register{
+#register{
     padding:15px 0 0 20px;
 }
-#Login{
-    padding:15px 10px 0 0;
+#login{
+    padding:15px 20px 0 0;
 }
-#Register:hover{
+#register:hover{
     text-decoration:underline;
 }
-#Login:hover{
+#login:hover{
     text-decoration:underline;
+}
+.slach {
+    float:right;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
 }
 #gmail{
 float:left;
+position:relative;
+left:10px;
 }
 #tel{
 float:left;
 border-left: 1px solid #e6e0e0;
+position:relative;
+left:10px;
 }
-/*****************/
-.topnav {/*يحدد إعدادات شريط التنقل*/
+.nav_one {
     overflow: hidden;
-}
-  
-.topnav a {/*يحدد إعدادات الروابط داخل شريط التنقل.*/
+} 
+.nav_one a {
     float: left;
     display: block;
     color: black;
@@ -121,15 +59,16 @@ border-left: 1px solid #e6e0e0;
     text-decoration: none;
     font-size: 17px;
 }
-  .topnav .search-container {/*يحدد إعدادات حاوية البحث*/
+  .nav_one .search-container {
     float: right;
     background-color:#f1eeee ;
     padding: 0 0 0 30px;
+    position:relative;
+    right:26px;
 }
-  
-.topnav input[type=text] {/*يحدد إعدادات حقل البحث.*/
+.nav_one input[type=text] {
     padding: 11px 11px 0 11px;
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 17px;
     border: none;
     width:250px;
@@ -137,87 +76,64 @@ border-left: 1px solid #e6e0e0;
     outline: none; 
     margin-bottom: 0;
 }
-  
-.topnav .search-container button {/*يحدد إعدادات زر البحث*/
+.section_one .nav_one .search-container button {
     float: right;
-    padding: 18px 10px 18px 10px;
+    padding: 18px 10px 10px 15px;
     margin-top: 0;
     margin-right: 0;
-    background: green;
+    background: #19c880;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
-.topnav .search-container button:hover {
+.nav_one .search-container button:hover {
     border:none;
 }
 .search-container i{
     color:white
 }
-/*****************************/
-/*.three_section img{
-    opacity:60%;
-    background-color:black; 
-}*/
+/********************************************************************************/
 .image-container {
     position: relative;
-    display: inline-block;
+    text-align: center;
+    color: white;
+    bottom:10px;
 }
-
-/*.image-container img {
-    display: block;
-}*/
-/*.image-container{
-    background-image: url("images/hero-bg.jpg");
-    background-color: rgba(18, 17, 17, 0.877); ;
-    height:800px;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.9;
-}*/
-.image-container {
-    background-image: url("img/hero-bg.jpg");
-    height: 800px;
+.background-image {
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
+    height: auto;
+    filter: brightness(50%); /* تعتيم الصورة */
 }
-.image-container::after {
-    content: "";
+.nav_three {
     position: absolute;
-
-
-    background: rgba(0, 0, 0, 0.5); /* لون الخلفية الداكن الإضافي */
-    z-index: 1;
+    top: 0;
     width: 100%;
-    height: 100%;
-}
-/*****************************/
-.nav_three{
     list-style-type: none;
     margin: 0 0 0 0;
-    padding: 0 120px 20px 0;
+    padding: 0 0 20px 0;
+    background-color: rgba(187, 182, 182, 0.5);
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     opacity: 0.5;
 }
-.nav_three a{
-    float:right;
+
+.nav_three a {
+    float: right;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin:25px 0 0 20px;
-    color:white;
+    margin: 25px 0 0 20px;
+    color: white;
 }
-#about #courses #blog #contact :hover{
+.nav_three a:hover{
     color:green;
+}
+.moveone{
+    padding:0 170px 0 0;
+}
+#clipboard:hover{
+    color:white;
 }
 #ezuca{
     float:left;
@@ -225,4 +141,68 @@ border-left: 1px solid #e6e0e0;
 }
 #ezuca span{
     color:green;
+}
+#ezuca:hover{
+    color:white;
+}
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 14%;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+.overlay-text .p1{
+    color:#19c880;
+}
+.overlay-text .p2{
+    font-size: 13px;
+}
+.moveone{
+    padding:0 170px 0 0;
+}
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+}
+.button1 {
+    background-color: transparent; /* خلفية شفافة */
+    color: white; 
+    border: 2px solid #04AA6D;
+    padding: 16px 32px; 
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+}
+.button1:hover {
+    /*background-color: #04AA6D;
+    color: white;*/
+    background-color: #04AA6D; 
+    border: 2px solid #04AA6D;
+}
+.card1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.card1 .d1 .d2{
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
