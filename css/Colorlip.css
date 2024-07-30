@@ -179,7 +179,7 @@ border-left: 1px solid #e6e0e0;
     opacity: 0.9;
 }*/
 .image-container {
-    background-image: url("images/hero-bg.jpg");
+    background-image: url("img/hero-bg.jpg");
     height: 800px;
     width: 100%;
     background-position: center;
