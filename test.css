@@ -1,0 +1,30 @@
+body{
+    background-color: #e8eaeb;
+}
+.section_five .img1{
+    float:right;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+.section_five .img2{
+    position:absolute;
+    padding-left: 740px;
+    padding-top: 230px;
+}
+.col2{
+    float:left;
+    display:block;
+    color:black;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+.section_five .na2{
+    list-style-type:none;
+    margin:0;
+    padding-left: 200px;
+    padding-top: 100px;
+    overflow:hidden;
+    position:absolute;
+}
+
